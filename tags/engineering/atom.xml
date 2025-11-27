@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Walk N&#x27; Squawk - engineering</title>
+    <subtitle>A Zig and Elixir Coding Blog, with some FPGA and Japanese content as well.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.walknsqualk.com/tags/engineering/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.walknsqualk.com/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-11-26T00:00:00+00:00</updated>
+    <id>https://www.walknsqualk.com/tags/engineering/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Asking for engineering help</title>
+        <published>2025-11-26T00:00:00+00:00</published>
+        <updated>2025-11-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.walknsqualk.com/025-asking-for-dev-help/"/>
+        <id>https://www.walknsqualk.com/025-asking-for-dev-help/</id>
+        
+        <summary type="html">&lt;p&gt;As I&#x27;ve advanced in my career, I spend more and more time helping my team and others in adjacent teams with issues they&#x27;re hitting.  I realized that many engineers don&#x27;t know how to properly ask for help from other engineers, leading to frustration and wasting time.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

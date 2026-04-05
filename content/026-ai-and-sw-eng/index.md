@@ -18,9 +18,9 @@ Is AI perfect?  Absolutely not.  It still can get into weird loops where it's no
 
 ## Implications to the Wider Industry
 
-I've been a professional software engineer for over twenty years at this point and AI coding agents, like Claude Code, are the single most dramatic step change I've witnessed.  I'ev seen many hype cycles over my career: virtualization, the cloud, containers, mobile development, front end java frameworks like React, etc.  
+I've been a professional software engineer for over twenty years at this point and AI coding agents, like Claude Code, are the single most dramatic step change I've witnessed.  I've seen many hype cycles over my career: virtualization, the cloud, containers, mobile development, front end java frameworks like React, etc.  
 
-You'd see [r/programming](https://www.reddit.com/r/programming/) and [Hacker News](https://news.ycombinator.com/) filled with stories about the hype for some time, usually abouta year and a half, and then it would start to die down.  The difference there was each of those applied to specific groups of develoeprs: backend web, frontend web, mobile apps.  This change is more like going from assembly to having compilers and is affecting a much broader set of developers.
+You'd see [r/programming](https://www.reddit.com/r/programming/) and [Hacker News](https://news.ycombinator.com/) filled with stories about the hype for some time, usually about a year and a half, and then it would start to die down.  The difference there was each of those applied to specific groups of developers: backend web, frontend web, mobile apps.  This change is more like going from assembly to having compilers and is affecting a much broader set of developers.
 
 A big differences with that comparison though: going from everything in assembler to compilers ruling took years.  The massive use of coding agents has been over the last few months, from what I've seen.
 
@@ -40,4 +40,4 @@ I do believe in the short term we will see a massive downward pressure on softwa
 
 At the end of the day, it doesn't really matter what software engineers want our job to look like.  As I've said for a long time, in a professional context, our job is to provide business value and software is our tool.  If it is possible to create that value more quickly, that is going to become the way it is done - with all the warts and problems that brings with it.
 
-I'm excited about this change, mostly.  It's sad to see a skill I've spent thirty years working on become far more commoditized over the course of a few short months - but this industry has always been one for people who can embrace change and learning new things.
+I'm excited about this change, mostly.  It's sad to see a skill I've spent thirty years working on become far more commoditized over the course of a few short months - but this industry has always been one for people who can embrace change and learn new things.

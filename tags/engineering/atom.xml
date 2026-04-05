@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Walk N&#x27; Squawk - engineering</title>
+    <subtitle>A Coding Blog, Zig, Elxiir, with some FPGA and Japanese content as well.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.walknsqualk.com/tags/engineering/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.walknsqualk.com/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-04-06T00:00:00+00:00</updated>
+    <id>https://www.walknsqualk.com/tags/engineering/atom.xml</id>
+    <entry xml:lang="en">
+        <title>AI, LLMs and a step change in SW engineering</title>
+        <published>2026-04-06T00:00:00+00:00</published>
+        <updated>2026-04-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.walknsqualk.com/026-ai-and-sw-eng/"/>
+        <id>https://www.walknsqualk.com/026-ai-and-sw-eng/</id>
+        
+        <content type="html" xml:base="https://www.walknsqualk.com/026-ai-and-sw-eng/">&lt;p&gt;A lot has been written about AI and LLMs for the last year and a half (probably much longer).  I mostly ignored AI and LLMs outside of chat clients on the web and found even with something like Cursor, that it wasn&#x27;t quite up to what I needed to be that much more productive.  Around the beginning of 2026, I ended up trying Claude Code at work and was sort of blown away.  It has led to me using Claude on a lot of my own projects and getting through a huge backlog of annoying bugs or tasks that I had put off for a long time.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-agent-coding-has-changed-my-dev-process&quot;&gt;How Agent Coding has Changed my Dev Process&lt;&#x2F;h2&gt;
+&lt;p&gt;The velocity change in my hobby development has been crazy.  I typically have 30 minutes to an hour a night to play around due to other responsibilities like parenting two amazing young boys, so I can kick off a task and come back and review and tweak things while making dinner - it&#x27;s basically unlocked a bunch of time that I couldn&#x27;t use before.&lt;&#x2F;p&gt;
+&lt;p&gt;At the same time, a lot of bugs or tasks that I previously just wouldn&#x27;t bother looking at, e.g. fixing stack trace printing on Windows for &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;srjilarious&#x2F;testz&quot;&gt;testz&lt;&#x2F;a&gt;, I was able to get done.  Now, is the code perfect and how I would have written it?  No.  I wouldn&#x27;t have written the code at all because I would always have had a lower hanging fruit to work on.&lt;&#x2F;p&gt;
+&lt;p&gt;Is AI perfect?  Absolutely not.  It still can get into weird loops where it&#x27;s not considering edge cases the way any human would.  It&#x27;s not great with software architecture choices all the time.  But for tools, examples, handling boring boiler plate type work - it is really a game changer.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;implications-to-the-wider-industry&quot;&gt;Implications to the Wider Industry&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve been a professional software engineer for over twenty years at this point and AI coding agents, like Claude Code, are the single most dramatic step change I&#x27;ve witnessed.  I&#x27;ev seen many hype cycles over my career: virtualization, the cloud, containers, mobile development, front end java frameworks like React, etc.&lt;&#x2F;p&gt;
+&lt;p&gt;You&#x27;d see &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;programming&#x2F;&quot;&gt;r&#x2F;programming&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;&quot;&gt;Hacker News&lt;&#x2F;a&gt; filled with stories about the hype for some time, usually abouta year and a half, and then it would start to die down.  The difference there was each of those applied to specific groups of develoeprs: backend web, frontend web, mobile apps.  This change is more like going from assembly to having compilers and is affecting a much broader set of developers.&lt;&#x2F;p&gt;
+&lt;p&gt;A big differences with that comparison though: going from everything in assembler to compilers ruling took years.  The massive use of coding agents has been over the last few months, from what I&#x27;ve seen.&lt;&#x2F;p&gt;
+&lt;p&gt;Many folks are worried that now &lt;em&gt;real&lt;&#x2F;em&gt; software engineering will get lost to agent coding slop and that there will be huge loss of software jobs as individuals can be more productive.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s hard to say with any certainty, but I think like with moving from assemblers to compilers, we&#x27;ll see the amount of software created massively expand.&lt;&#x2F;p&gt;
+&lt;p&gt;The number of smaller companies that simply did without various automation tools is huge - they can now work to improve their business in a way that was not economically feasible before.  The engineering job of translating rough ideas into requirements that can actually be created will exist in any case.&lt;&#x2F;p&gt;
+&lt;p&gt;There will be much more sloppily written code, but as I&#x27;ve heard other people mention - many problems that we solve with software don&#x27;t need super elegant code and other areas definitely need human review.&lt;&#x2F;p&gt;
+&lt;p&gt;For example, &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;srjilarious&#x2F;zkdocs&quot;&gt;a tool for generating a documentation site for a zig project&lt;&#x2F;a&gt; - the software architecture is not so important, just that the output is what I want.  On the other hand, handling concurrency in an OS kernel - probably want a human to have verified all of the logic thoroughly.&lt;&#x2F;p&gt;
+&lt;p&gt;I do believe in the short term we will see a massive downward pressure on software engineering salaries as companies see improved productivity.  I also think we will see a huge number of 10-20 person companies that will have the same output as older 100-200 person companies.  The lower communication overhead of a smaller team will allow product-first engineers to make progress far faster than larger organizations are able to.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;At the end of the day, it doesn&#x27;t really matter what software engineers want our job to look like.  As I&#x27;ve said for a long time, in a professional context, our job is to provide business value and software is our tool.  If it is possible to create that value more quickly, that is going to become the way it is done - with all the warts and problems that brings with it.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m excited about this change, mostly.  It&#x27;s sad to see a skill I&#x27;ve spent thirty years working on become far more commoditized over the course of a few short months - but this industry has always been one for people who can embrace change and learning new things.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Asking for engineering help</title>
+        <published>2025-11-26T00:00:00+00:00</published>
+        <updated>2025-11-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.walknsqualk.com/025-asking-for-dev-help/"/>
+        <id>https://www.walknsqualk.com/025-asking-for-dev-help/</id>
+        
+        <summary type="html">&lt;p&gt;As I&#x27;ve advanced in my career, I spend more and more time helping my team and others in adjacent teams with issues they&#x27;re hitting.  I realized that many engineers don&#x27;t know how to properly ask for help from other engineers, leading to frustration and wasting time.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

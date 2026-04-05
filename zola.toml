@@ -5,7 +5,7 @@ base_url = "https://www.walknsqualk.com/"
 # If you use the npm/node script then all you have to do is set offline = true, and everything else is automatic.
 
 title = "Walk N' Squawk"
-description = "A Zig and Elixir Coding Blog, with some FPGA and Japanese content as well."#for SEO aim for 140-180 Characters
+description = "A Coding Blog, Zig, Elxiir, with some FPGA and Japanese content as well."#for SEO aim for 140-180 Characters
 theme = "abridge"
 
 default_language = "en"
@@ -17,7 +17,6 @@ taxonomies = [
 #    {name = "categories", feed = true},
     {name = "tags", feed = true},
 ]
-
 
 #ignored_content = []
 #ignored_static = ["apple-touch-icon.png","banner.png","safari-pinned-tab.svg","favicon*","m*.png","android-chrome*png"]
@@ -36,15 +35,58 @@ include_content = true      # include rendered content of page/section in index
 # truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
 
 [markdown]
-highlight_code = true
-highlight_theme = "css"
 bottom_footnotes = true # adds footnote backreference
-render_emoji = true
+render_emoji = false
 external_links_target_blank = true # rel="noopener"
 external_links_no_follow = false   # rel="nofollow"
 external_links_no_referrer = false # rel="noreferrer"
 smart_punctuation = false          # `...` to `…`, `"quote"` to `“curly”` etc
-extra_syntaxes_and_themes = ["syntaxes"]
+
+[markdown.highlighting]
+theme = "synthwave-84"
+
+# # Any Extra language you do not use, delete or comment out the extra language sections:
+# [languages.fr]
+# title = "Abridge"
+# description = "Abridge est un thème Zola rapide et léger utilisant le html sémantique, le CSS abridge.css class-light et aucun JS obligatoire."
+# generate_feeds = true
+# build_search_index = true
+# search.include_title = true # include title of page/section in index
+# search.include_description = true # include description of page/section in index
+# search.include_content = true # include rendered content of page/section in index
+# # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
+# taxonomies = [
+# #    {name = "categories", feed = true},
+#     {name = "tags", feed = true},
+# ]
+
+# [languages.es]
+# title = "Abridge"
+# description = "Abridge es un tema de Zola rápido y liviano que utiliza HTML semántico, CSS ligero de clase abridge.css y JS no obligatorio."
+# generate_feeds = true
+# build_search_index = true
+# search.include_title = true # include title of page/section in index
+# search.include_description = true # include description of page/section in index
+# search.include_content = true # include rendered content of page/section in index
+# # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
+# taxonomies = [
+# #    {name = "categories", feed = true},
+#     {name = "tags", feed = true},
+# ]
+
+# [languages.pt]
+# title = "Abridge"
+# description = "Abridge é um tema rápido e leve que usa HTML semântico, CSS de clase leve abridge.css y JS não obrigatório."
+# generate_feeds = true
+# build_search_index = true
+# search.include_title = true # include title of page/section in index
+# search.include_description = true # include description of page/section in index
+# search.include_content = true # include rendered content of page/section in index
+# # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
+# taxonomies = [
+# #    {name = "categories", feed = true},
+#     {name = "tags", feed = true},
+# ]
 
 [extra]
 ###############################################################################
@@ -55,7 +97,7 @@ extra_syntaxes_and_themes = ["syntaxes"]
 ###############################################################################
 
 menu = [
-    # {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
+#    {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
 #    {url = "about", name = "About", slash = true, blank = false, size="s110"},
     {url = "archive", name = "Posts", slash = true, blank = false, size="s110"},
 #    {url = "categories", name = "Categories", slash = true, blank = false, size="s110"},
@@ -70,15 +112,15 @@ menu_footer = [
 
 toc = true
 recent = true # TOC / index
-recent_items = 5
+recent_items = 15
 series = true
 series_items = 9 # Max number of items to display in series list, use 0 to disable
 #Series_parts = "$NUMBER_OF_PARTS part Series"
 
 #arrow_pagination = true # If set to true then the pagination will use the old arrows mode, be sure to also enable the icons.
 
-meta_index = { position="bottom", size="s90", author=false, readtime=true, readstring="min", date=true, updated=false, categories_tags=true, divider="" }
-meta_post = { position="top", size="s95", author=true, readtime=true, readstring="min read", date=true, updated=true, categories_tags=true, divider="" }
+meta_index = { position="bottom", size="s90", author=false, readtime=false, readstring="min", date=true, updated=false, categories_tags=true, divider="" }
+meta_post = { position="top", size="s95", author=true, readtime=false, readstring="min read", date=true, updated=true, categories_tags=true, divider="" }
 
 hide_section_dates = false # hides the date for sections that use posts.html as their template.
 hide_page_nextprev_titles = false # hides the next/previous titles for pages that use page.html as their template.
@@ -91,11 +133,11 @@ footer_credit = true
 ### Uncomment one of the below lines, or neither, depending on which type of logo you want to use:
 logo = { file="logo.png", width="48", height="48", alt="WalkNSqualk", text=" Walk N' Squalk" }
 #textlogo = '<font color="#f90">A</font>bridge'
-# textlogo = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f90" viewBox="0 0 96 96" width="28" height="28"><path stroke-width="14" d="M14 99 46 7h4l32 92"/><path stroke-width="9" d="M-3 82c43-26 59-26 102 0"/><path stroke-linecap="round" stroke-width="1.5" d="M94 72v7m-5-9.8v7m-5-9.8v7.1M79 64v7M63 57.7v7m-5-8.2v7m-5-7.8v7m-5-7.2v7m-5-6.7v7m-5-6.3v7m-5-5.8v7M17 64v7m-5-4.6v7m-5-4.2v7M2 72v7"/></svg>bridge'
+textlogo = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f90" viewBox="0 0 96 96" width="28" height="28"><path stroke-width="14" d="M14 99 46 7h4l32 92"/><path stroke-width="9" d="M-3 82c43-26 59-26 102 0"/><path stroke-linecap="round" stroke-width="1.5" d="M94 72v7m-5-9.8v7m-5-9.8v7.1M79 64v7M63 57.7v7m-5-8.2v7m-5-7.8v7m-5-7.2v7m-5-6.7v7m-5-6.3v7m-5-5.8v7M17 64v7m-5-4.6v7m-5-4.2v7M2 72v7"/></svg>bridge'
 
 sitedesc = false # enables or disables the display of the site description below the logo.
-headhr = true # show or hide horizontal rule below header
-foothr = true # show or hide horizontal rule above footer
+headhr = false # show or hide horizontal rule below header
+foothr = false # show or hide horizontal rule above footer
 
 ### $CURRENT_YEAR and $SITE_TITLE can be used anywhere within the copyright, you can change their position or you can also delete them and type whatever you want instead.
 #copyright = false # set to false to disable the copyright.
@@ -110,9 +152,9 @@ foothr = true # show or hide horizontal rule above footer
 ###############################################################################
 
 title_separator = "|"  # Separator between title and title_addition, set as |, -, _, etc
-title_addition = "Walk N' Sqauwk" # a default value for title addition (for SEO aim for 50-70 characters including the title and separator 'Abridge | title_addition')
-author = "Jeff DeWall" # Put Your Name here
-keywords = "Zig, Rust, Elixir, Python, Japanese, German, Coding" # used for the primary site index
+title_addition = "Fast, Lightweight, and Modern Zola Theme" # a default value for title addition (for SEO aim for 50-70 characters including the title and separator 'Abridge | title_addition')
+author = "Jake G" # Put Your Name here
+keywords = "Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" # used for the primary site index
 banner = "banner.png" # Used as default image for OpenGraph/Twitter if page specific image is undefined.
 twitter_meta = "your-user-name" # for SEO: twitter:site and twitter:creator
 google = "Your Google Site verification code."
@@ -129,28 +171,28 @@ seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twit
 ###############################################################################
 
 feed = true # this adds the RSS feed icon in the footer.
-mail = "srjilarious@fastmail.net"
-mastodon = "https://mastodon.social/@srjilarious"
-# element = "matrix.example.com"
+mail = "name@example.com"
+mastodon = "https://mastodon.example.com/@username"
+element = "matrix.example.com"
 #buymeacoffee = "your-user-name"
-# kofi = "your-user-name"
-#discord = "your-discord" # Everything after https://discord.com/   eg: invite/my-server  *or*  servers/my-server-id
+kofi = "your-user-name"
+#discord = "https://discord.com/invite/my-server" # https://discord.com/invite/my-server  *or*  https://discord.com/servers/my-server-id
 #twitter = "your-user-name"
 #facebook = "your-user-name"
 #linkedin = "your-user-name"
-gitlab = "sr.jilarious"
-github = "srjilarious"
+#gitlab = "your-user-name"
+github = "your-user-name"
 #codeberg = "your-user-name" # Everything after https://codeberg.org/   eg: username  *or*  username/repository
 #github_sponsor = "your-user-name"
 #bitbucket = "your-user-name"
 #python = "your-user-name"
 #docker = "your-user-name"
 #stack = "your-user-name"
-# instagram = "your-user-name"
+instagram = "your-user-name"
 #pixelfed = "https://pixelfed.example.com/" # Heaviest icon, off by default
 #pinterest = "your-user-name"
-# twitch = "your-user-name"
-# youtube = "channel/your-channel-id"
+twitch = "your-user-name"
+youtube = "channel/your-channel-id"
 #peertube = "https://peertube.example.com/@username"
 #researchgate = "your-profile-id"
 #telegram = "your-user-name"
@@ -232,8 +274,8 @@ favicon_theme_color = "#333333"
 favicon_ms_color = "#333333"
 favicon_mask = "safari-pinned-tab.svg" # safari-pinned-tab.svg
 favicon_mask_color = "#ff9900"
-# favicon_svg = "favicon.svg" # favicon.svg
-favicon180 = "apple-icon.png" # apple-touch-icon.png
+favicon_svg = "favicon.svg" # favicon.svg
+favicon180 = "apple-touch-icon.png" # apple-touch-icon.png
 favicon32 = "favicon-32x32.png" # favicon-32x32.png
 favicon16 = "favicon-16x16.png" # favicon-16x16.png
 
@@ -241,11 +283,16 @@ favicon16 = "favicon-16x16.png" # favicon-16x16.png
 ###############################################################################
 ### Commenting System for visitors to leave comments on pages.
 ###   hyvor talk
+###   remark42
 ###############################################################################
+
+#comment_system = "hyvor" # valid values are: "hyvor", "remark42"
 
 #comments.hyvor = "9366" # hyvor website id, comment out to disable.
 #comments.hyvorcolor = "os" # set the color property for hyvor
 
+#comments.remark42 = "https://comments.example.com" # remark42 server url, comment out to disable.
+#comments.remark42_site_id = "remark" # remark42 site id
 
 ###############################################################################
 ### Icons
@@ -349,5 +396,3 @@ favicon16 = "favicon-16x16.png" # favicon-16x16.png
 
 #math = false # Recommended setting false, and enable on per page bases instead.
 #math_auto_render = false # Recommended setting false, and enable on per page bases instead.
-
-[languages]

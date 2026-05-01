@@ -1,6 +1,6 @@
 .env
 public
-themes
+
 build
 storage
 node_modules
